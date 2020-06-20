@@ -1,0 +1,26 @@
+
+
+div.container{
+  border: 1px solid red;
+}
+
+.col-12{
+  border: 1px solid gold;
+}
+.col-md-9{
+  border:1px solid blue;
+}
+.col-md-3{
+  border: 1px solid gold;
+}
+
+@media screen and (max-width:767px) {
+.col-md-9{
+  order:2;
+}
+
+.col-md-3{
+    order:1;
+}
+
+}

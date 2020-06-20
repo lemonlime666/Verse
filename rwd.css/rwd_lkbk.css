@@ -1,0 +1,294 @@
+/* header */
+@media screen and (max-width:996px){
+
+    header{
+        position: -webkit-sticky; 
+        position: sticky;
+        top:0;
+        left:0;
+    }
+
+    header div.logo{
+        /* border: 1px solid red; */
+        position: absolute;
+        left:50%;
+        transform: translateX(-80%);
+    }
+    header div.logo a{
+        margin-left: 0;
+    }
+
+    header nav.head_nav{
+        /* border: 1px solid red; */
+        width: 100vw;
+        position: fixed;
+        left:0;
+        top:0;
+        min-width: 300px;
+        height: 400px;
+        background-color: rgba(239, 239, 239, .9);
+        opacity:0;
+        z-index:-1;
+        transition: opacity .4s ease , z-index 1s;
+        visibility: hidden;
+    }
+
+    header nav.navOn{
+        opacity:1;
+        z-index:90;
+        transition: opacity .4s ease , z-index 1s;
+        visibility:visible;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(239, 239, 239, .95);
+    }
+
+    header nav.head_nav ul{
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 50%;
+        flex-flow: column;
+        align-items: center;
+    }
+    header nav.head_nav ul li{
+        border-bottom: 1px solid rgba(86, 86, 86, .4);
+        width:40%;
+        height:25%;
+    }
+    header nav.head_nav ul li{
+        opacity:0;
+        transition: opacity .4s ease;
+    }
+    header nav.head_nav ul li:last-child{
+        border: 0;
+    }
+    header nav.head_nav ul li a{
+        width: 100%;
+        height:100%;
+        font-size: 16px;
+        color:#383838;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav.head_nav ul li a:hover::after{
+        border: none;
+    }
+    header div.hamburger{
+        display: block;
+    }
+    
+
+    header nav.head_nav ul li.clickOn:nth-child(1){
+        opacity:1;
+        transition: opacity .8s ease;
+    }
+    header nav.head_nav ul li.clickOn:nth-child(2){
+        opacity:1;
+        transition: opacity 1.1s ease;
+    }
+    header nav.head_nav ul li.clickOn:nth-child(3){
+        opacity:1;
+        transition: opacity 1.4s ease;
+    }
+    header nav.head_nav ul li.clickOn:last-child{
+        opacity:1;
+        transition: opacity 1.6s ease;
+    }
+    
+}
+@media screen and (max-width:768px){
+    header div.hamburger{
+        left:40px;
+    }
+    header div.head_aside a img.gryacc{
+        right:30px;
+    }
+    header div.head_aside a img.redacc{
+        right:30px;
+    }
+    header div.head_aside a img.grybag{
+        right:70px;
+    }
+    header div.head_aside a img.redbag{
+        right:70px;
+    }
+    header div.head_aside a img.gryheart{
+        right:108px;
+    }
+    header div.head_aside a img.redheart{
+        right:108px;
+    }
+}
+@media screen and (max-width:576px){
+    header div.logo{
+        width:auto;
+        transform: translateX(-50%);
+    }
+    header div.logo a::before{
+        display: none;
+    }
+}
+@media screen and (max-width:480px){
+
+    header div.hamburger{
+        left:20px;
+    }
+    header div.logo a{
+        min-width: 100px;
+        height: 60px;
+        transform: translateY(-5px);
+    }
+    header div.head_aside{
+        width: auto;
+    }
+    header div.head_aside a img.gryacc{
+        right:20px;
+    }
+    header div.head_aside a img.redacc{
+        right:20px;
+    }
+    header div.head_aside a img.grybag{
+        right:51px;
+    }
+    header div.head_aside a img.redbag{
+        right:51px;
+    }
+    header div.head_aside a img.gryheart{
+        right:80px;
+    }
+    header div.head_aside a img.redheart{
+        right:80px;
+    }
+}
+
+@media screen and (max-width:360px){
+    header div.head_aside a img.gryacc{
+        right:10px;
+    }
+    header div.head_aside a img.redacc{
+        right:10px;
+    }
+    header div.head_aside a img.grybag{
+        right:41px;
+    }
+    header div.head_aside a img.redbag{
+        right:41px;
+    }
+    header div.head_aside a img.gryheart{
+        right:70px;
+    }
+    header div.head_aside a img.redheart{
+        right:70px;
+    }
+    
+}
+
+/* footer */
+@media screen and (max-width:768px){
+    footer.footer{
+        height:800px;
+        flex-wrap: wrap;
+    }
+    footer div.footerleft{
+        width:50%;
+        padding-left: 20px;
+    }
+    footer div.footermid{
+        width:50%;
+    }
+    footer div.footerright{
+        width:100%;
+        padding-left: 20px;
+    }
+    footer div.footerright .righttop{
+        width:100%;
+        text-align: left;
+    }
+    footer div.footerright div.rightbot{
+        width:100%;   
+    }
+    footer div.footerright div.rightbot input{
+        width:80%;
+        height:25px;
+        background-color: #383838;
+        color:#efefef;
+        border:0;
+        text-align: center;
+    }
+    footer div.footerleft div.lefbot div button{
+        width: auto !important;
+    }
+}
+
+@media screen and (max-width:576px){
+    footer.footer{
+        height:800px;
+        flex-wrap: wrap;
+    }
+    footer div.footerleft{
+        width:100%;
+        padding-left: 20px;
+    }
+    footer div.footermid{
+        width:100%;
+        padding-left: 20px;
+    }
+    footer div.footermid .midtop {
+        height: 10%;
+        margin-top: 10px;
+    }
+}
+
+/* lkbk */
+@media screen and (max-width:1200px){
+    section.lookbook div.lookbookimg:nth-child(2) img {
+        width:auto;
+        height:120%;
+    }
+}
+
+@media screen and (max-width:996px){
+    section.lookbook div.lookbookimg img {
+        width:auto;
+        height:120%;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    
+    section.lookbook{
+        justify-content: center;
+    }
+    section.lookbook div.lookbookimg a {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    
+    
+    section.lookbook div.lookbookimg a {
+        text-align: center;
+    }
+
+    section.lookbook div.lookbookimg img{
+        right:-200px;
+    }
+    section.lookbook div.lookbookimg:nth-child(2) img{
+        right:-250px;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    section.lookbook div.lookbookimg a{
+        font-size: 45px;
+        
+    }
+}
+
+
